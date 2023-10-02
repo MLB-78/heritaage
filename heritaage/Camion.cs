@@ -9,7 +9,7 @@ namespace CoursHeritage
     class Camion : Vehicule
     {
         private int nbRoues;
-        
+
         public Camion(string immat, string couleur, float poids, int roues)
             : base(immat, couleur, poids)
         {
@@ -45,6 +45,7 @@ namespace CoursHeritage
         {
             vitesseActuelle += 5;
         }
+
     }
 
     class DeuxRoues : Vehicule
@@ -69,34 +70,6 @@ namespace CoursHeritage
         public override string ToString()
         {
             return base.ToString() + "\nJe suis un 2 roues.";
-        }
-    }
-
-    class Moto : DeuxRoues
-    {
-        public Moto(string immat, string couleur, float poids, string type)
-            : base(immat, couleur, poids, type)
-        {
-        }
-
-        public override void AfficheToi()
-        {
-            base.AfficheToi();
-            Console.WriteLine("Je suis une moto et l'on a besoin d'un permis pour me conduire.");
-        }
-    }
-
-    class Velo : DeuxRoues
-    {
-        public Velo(string immat, string couleur, float poids, string type)
-            : base(immat, couleur, poids, type)
-        {
-        }
-
-        public override void AfficheToi()
-        {
-            base.AfficheToi();
-            Console.WriteLine("Je suis un vélo et on n'a pas besoin de permis pour m'utiliser.");
         }
     }
 }

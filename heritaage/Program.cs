@@ -1,4 +1,5 @@
-﻿using System;
+﻿using heritaage;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,8 +17,8 @@ namespace CoursHeritage
             Camion camion = new Camion("2541 BH 78", "Bleu", 3500, 6);
             Autobus autobusA = new Autobus("123 AB 45", "Rouge", 5000, "A");
             Autobus autobusB = new Autobus("789 CD 67", "Vert", 4000, "B");
-            DeuxRoues moto = new Moto("ABC 123", "Noire", 200, "Moto");
-            DeuxRoues velo = new Velo("XYZ 987", "Rouge", 15, "Velo");
+            Moto moto = new Moto("ABC 123", "Noire", 200, "Moto");
+            Velo velo = new Velo("XYZ 987", "Rouge", 15, "Velo");
 
             // Accélérer les véhicules
             vehicule.Accelerer();
